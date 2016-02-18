@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/candidatebanner.ico">
+    <link rel="stylesheet" href="css/vendor/fluidbox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+ 
+    <link rel="stylesheet" href="css/buildacandidate.css">
+
+    <title>Candidate Application</title>
+
+</head>
+<body>
+
+
+    <header>
+
+        <div id="logo-container">
+            <div id="logo"><a href="index.html">YesEuropeLab</a></div>
+            <div id="subtitle">Launching The Next Generation Of European Political Leaders from the Grassroots</div>
+        </div>
+
+    </header>
+    <br>
+    <section class="intro">
+        <div class="col-md-8 col-md-offset-6">
+            <h3 class="section-subheading text-muted">We are calling women and men with little to no prior political experience. You can be from any party or no party at all and the office you seek can be at the national, state or local level. </h3>
+        </div>
+    </section>
+
+    <!-- Multiple Step Form-->
+    <form id="testForm" class="msform" action= "register.php" method="post">
+
+      <!-- progressbar -->
+      <ul id="progressbar" >
+        <li class="active">Who You Are</li>
+        <li> What You Believe <li>
+        <ui> Submit <ui>
+      </ul>
+
+    <!-- fieldsets -->
+    <fieldset>
+    <h2 class="fs-title">Tell us about you</h2>
+    <h2 id="bigger" class="fs-subtitle">Let's start with the basics...</h2>
+    <input name="name" placeholder="Full Name" />
+    <input maxlength="2"type="number" name="dob" placeholder="Age"/>
+    <input type="name" name="email" placeholder="Email Address"/>
+    <input name="location" placeholder="Place of Birth (City, Country)" />
+    <input name="almamater" placeholder="High School/University" />
+    <input maxlength="5" name="district" placeholder="Current City" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+ 
+    <fieldset class="questions">
+    <h1 class="fs-title">Why are you running?</h1>
+    <br>
+    <textarea id="relations.questions[0].question" type="text" disabled="disabled" name="relations.questions[0].question" placeholder="What office are you considering a run for?" /></textarea>
+    <textarea name="0a" placeholder="Answer"></textarea>
+    
+    <textarea id="relations.questions[1].question" type="text" disabled="disabled" name="relations.questions[1].question" placeholder="What are your top three priorities for the office you are seeking?"/></textarea>
+    <textarea maxlength="50" name="1a1" placeholder="Number 1"></textarea>
+    <textarea maxlength="50" name="1a2" placeholder="Number 2"></textarea>
+    <textarea maxlength="50" name="1a3" placeholder="Number 3"></textarea>
+
+    <textarea id="relations.questions[2].question" disabled="disabled" name="relations.questions[2].question" placeholder="Share your story in 300 words."></textarea>
+    <textarea name="2a" placeholder="Answer"></textarea>
+    
+    <textarea id="relations.questions[3].question" disabled="disabled" name="relations.questions[3].question" placeholder="How will you make a difference?"></textarea>
+    <textarea name="3a" placeholder="Answer"></textarea>
+
+    <textarea id="check"  disabled="disabled" type="text" name="relations.questions[7].question" placeholder="Attach a link to a 2 minute YouTube Video! Tell us your story, show us your community!"></textarea>
+    <input id="check" name="4a" placeholder="Paste Link Here" /></textarea>
+    
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" class="next action-button"/>
+    </fieldset>
+    
+    <fieldset>
+        <h2 class="fs-title">Thank you!</h2>
+        <h3 class="fs-subtitle"> You have taken the first step to becoming a candidate!</h3>
+        <h3 class="fs-subtitle"> We will be in contact with you within 3-4 weeks</h3>
+        <button id="home"><a href="index.html">Home</a></button>
+        <div align="left">
+        <pre><code id="testArea" class="fs-subsub"></code></pre>
+        </div>
+    </fieldset>
+
+</form>
+
+
+<!-- THIS IS THE PART THAT CONVERTS THE FORM INPUT INTO JSON OBJECTS -->
+<script type="text/javascript">
+//     function test()
+//     {
+//         var formData = form2object('testForm', '.', true,
+//                 function(node)
+//                 {
+//                     if (node.id && node.id.match(/callbackTest/))
+//                     {
+//                         return { name: node.id, value: node.innerHTML };
+//                     }
+//                 });
+
+//         document.getElementById('testArea').innerHTML = JSON.stringify(formData, null, '\t');
+//     }
+// </script>
+
+
+<!--         <section class="row" style="position:absolute; float:bottom;bottom:10px;width:100%;height:20px;">
+            <div class="col-full">
+                <p>
+                    © 2015 The Architect's Genome <a href="http://www.jakerudin.com">Jake Rudin</a>, <a href="http://lezhili.me/">Lezhi Li</a>, <a href="http://benjaminlbarba.com/">Benjamin Lopez Barba</a>, <a href="https://www.linkedin.com/pub/nicolas-rossenblum/65/95/130">Nicolas Rossenblum</a>.
+                </p>
+            </div>
+        </section> -->
+ 
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+    if (!window.jQuery) 
+    {
+        document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+    }
+    </script>
+
+    <script src="js/vendor/jquery.fluidbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+ <!-- jQuery -->
+<script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+
+  <script src="js/index.js"></script>
+
+
+
+</body>
+</html>
+
