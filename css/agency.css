@@ -25,6 +25,7 @@ p {
 .buttons2{
      width:100%;
      text-align: center;
+     padding-left: 100px;
      padding-right: 100px;
      padding-top: 100px;
      padding-bottom: 250px;
@@ -126,6 +127,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
+    width: 300px !important;
     border-color: #000099;
     border-radius: 3px;
     text-transform: uppercase;
